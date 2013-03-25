@@ -21,6 +21,7 @@ include_once('php/Qp/includeQP.php');
 
     <!-- Подключение javaScript -->
     <script src="js/functionJS.js"></script>
+    <script src="js/function.js"></script>
     <script type='text/javascript' src='jQuery/js/jquery-1.8.3.js'></script>
     <script type='text/javascript' src='jQuery/js/jquery-ui-1.9.2.custom.js'></script>
     <script type='text/javascript' src='jQuery/js/jquery-ui-1.9.2.custom.min.js'></script>
@@ -75,10 +76,9 @@ include_once('php/Qp/includeQP.php');
         <!-- =========================================================================== -->
         <br>
         <?php
-        $dir = new Qp\QStringColor('C++');
-        echo $dir->getStringStyle('int char value');
+        include_once('php/tableSetCommit.php');
         ?>
-
+        <br>
         <!-- =========================================================================== -->
     </td>
 </tr>

@@ -1,4 +1,60 @@
-.key{
-    color: blue;
+.CPlusPlus {
+    font-size: 14px;
     display: inline;
+}
+
+.PHP {
+    display: inline;
+    font-size: 14px;
+}
+
+.QnumBackground{
+    background-color: #ffffff;
+}
+
+.PHP.Qbackground{
+    background-color: #e6e6e6;
+}
+
+.PHP.Qkey{
+    color: #00008b;
+    font-weight: bold;
+}
+
+.PHP.Qnum{
+    color: #2b81af;
+}
+
+.PHP.Qstring{
+    color: #006400;
+}
+
+.PHP.Qcomment{
+    color: #333333;
+}
+
+.CPlusPlus.Qbackground{
+    background-color: #e6e6e6;
+}
+
+.CPlusPlus.Qkey{
+    color: #00008b;
+    font-weight: bold;
+}
+
+.CPlusPlus.Qnum{
+    color: #2b81af;
+}
+
+.CPlusPlus.Qstring{
+    color: #006400;
+}
+
+.CPlusPlus.Qcomment{
+    color: #333333;
+}
+
+.CPlusPlus.Qinclude{
+    font-weight: bold;
+    color: #006400;
 }

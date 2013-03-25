@@ -17,31 +17,95 @@
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="tableSetCommit.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/php/tableSetCommit.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="28" selection-start="1176" selection-end="1176" vertical-scroll-proportion="0.28751975">
+              <folding>
+                <marker date="1364254276799" expanded="false" signature="1162:1174" placeholder="..." />
+                <marker date="1364254276799" expanded="true" signature="1175:1727" placeholder="..." />
+                <marker date="1364254276799" expanded="true" signature="1175:2433" placeholder="..." />
+                <marker date="1364254276799" expanded="false" signature="1196:1209" placeholder="..." />
+                <marker date="1364254276799" expanded="false" signature="1196:1209" placeholder="..." />
+                <marker date="1364254276799" expanded="false" signature="1241:1252" placeholder="..." />
+                <marker date="1364254276799" expanded="true" signature="1272:1519" placeholder="..." />
+                <marker date="1364254276799" expanded="true" signature="1276:1514" placeholder="..." />
+                <marker date="1364254276799" expanded="true" signature="1289:1392" placeholder="..." />
+                <marker date="1364254276799" expanded="true" signature="1393:1501" placeholder="..." />
+                <marker date="1364254276799" expanded="true" signature="1425:1488" placeholder="..." />
+                <marker date="1364254276799" expanded="true" signature="1528:1726" placeholder="..." />
+                <marker date="1364254276799" expanded="true" signature="1528:1547" placeholder="..." />
+                <marker date="1364254276799" expanded="false" signature="1549:1637" placeholder="..." />
+                <marker date="1364254276799" expanded="true" signature="1670:1716" placeholder="..." />
+                <marker date="1364254276799" expanded="true" signature="1670:1716" placeholder="..." />
+                <marker date="1364254276799" expanded="true" signature="1735:2433" placeholder="..." />
+                <marker date="1364254276799" expanded="true" signature="1735:2433" placeholder="..." />
+                <marker date="1364254276799" expanded="true" signature="1748:2433" placeholder="..." />
+                <marker date="1364254276799" expanded="true" signature="1832:2433" placeholder="..." />
+                <marker date="1364254276799" expanded="true" signature="2760:3378" placeholder="..." />
+                <marker date="1364254276799" expanded="true" signature="3589:4190" placeholder="..." />
+                <marker date="1364254276799" expanded="true" signature="4391:4560" placeholder="..." />
+                <marker date="1364254276799" expanded="true" signature="4416:4550" placeholder="..." />
+                <marker date="1364254276799" expanded="false" signature="4478:4507" placeholder="..." />
+                <marker date="1364254276799" expanded="true" signature="4569:4792" placeholder="..." />
+                <marker date="1364254276799" expanded="true" signature="4569:4622" placeholder="..." />
+                <marker date="1364254276799" expanded="false" signature="4590:4608" placeholder="..." />
+                <marker date="1364254276799" expanded="true" signature="4621:4782" placeholder="..." />
+                <marker date="1364254276799" expanded="true" signature="4621:4782" placeholder="..." />
+                <marker date="1364254276799" expanded="false" signature="4813:4825" placeholder="..." />
+                <marker date="1364254276799" expanded="false" signature="4813:4825" placeholder="..." />
+                <marker date="1364254276799" expanded="false" signature="4857:4891" placeholder="..." />
+                <marker date="1364254276799" expanded="false" signature="4955:4968" placeholder="..." />
+                <marker date="1364254276799" expanded="true" signature="4981:4988" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="78" column="52" selection-start="2846" selection-end="2846" vertical-scroll-proportion="-12.5">
+            <state line="80" column="12" selection-start="2865" selection-end="2865" vertical-scroll-proportion="-13.208333">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="styleQStringColor.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/Qp/QStringColor/styleQStringColor.css">
+      <file leaf-file-name="function.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/function.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="20" selection-start="43" selection-end="43" vertical-scroll-proportion="0.0">
+            <state line="39" column="10" selection-start="1043" selection-end="1043" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="classQStringColor.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="inquiryAjax.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/inquiryAjax.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="1" selection-start="225" selection-end="225" vertical-scroll-proportion="-5.625">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="classQStringColor.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/Qp/QStringColor/classQStringColor.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="83" column="93" selection-start="2415" selection-end="2415" vertical-scroll-proportion="0.58204335">
-              <folding />
+            <state line="82" column="44" selection-start="2864" selection-end="2864" vertical-scroll-proportion="-6.25">
+              <folding>
+                <marker date="1364253796345" expanded="true" signature="2852:2864" placeholder="..." />
+                <marker date="1364253796345" expanded="true" signature="3004:3016" placeholder="..." />
+                <marker date="1364253796345" expanded="true" signature="3282:3298" placeholder="..." />
+                <marker date="1364253796345" expanded="true" signature="3318:3399" placeholder="..." />
+                <marker date="1364253796345" expanded="true" signature="3510:3635" placeholder="..." />
+                <marker date="1364253796345" expanded="true" signature="3659:3695" placeholder="..." />
+                <marker date="1364253796345" expanded="true" signature="3953:3977" placeholder="..." />
+                <marker date="1364253796345" expanded="true" signature="6210:6246" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -56,11 +120,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/php/QP/QCodeGen/classQCodeGen.php" />
-        <option value="$PROJECT_DIR$/php/QP/QCaptcha/classQCaptcha.php" />
-        <option value="$PROJECT_DIR$/privateOffice.php" />
-        <option value="$PROJECT_DIR$/registration.php" />
-        <option value="$PROJECT_DIR$/templet.php" />
         <option value="$PROJECT_DIR$/php/tableRegistration.php" />
         <option value="$PROJECT_DIR$/authorizationUserPage.php" />
         <option value="$PROJECT_DIR$/php/functionPHP.php" />
@@ -69,9 +128,14 @@
         <option value="$PROJECT_DIR$/php/Qp/QCodeGen/classQCodeGen.php" />
         <option value="$PROJECT_DIR$/php/Qp/QMail/classQMail.php" />
         <option value="$PROJECT_DIR$/php/Qp/QDir/classQDir.php" />
+        <option value="$PROJECT_DIR$/js/functionAjax.js" />
+        <option value="$PROJECT_DIR$/js/functionJS.js" />
         <option value="$PROJECT_DIR$/php/Qp/QStringColor/styleQStringColor.css" />
+        <option value="$PROJECT_DIR$/php/inquiryAjax.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/js/function.js" />
         <option value="$PROJECT_DIR$/php/Qp/QStringColor/classQStringColor.php" />
+        <option value="$PROJECT_DIR$/php/tableSetCommit.php" />
       </list>
     </option>
   </component>
@@ -191,28 +255,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="php" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Qp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="QStringColor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forum" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forum" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -243,17 +285,21 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="preferences.keymap" />
     <property name="last_opened_file_path" value="$USER_HOME$/myhost" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/css/forumStyle" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="PHP Script.classQStringColor.php">
+    <configuration default="false" name="classQStringColor.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/php/Qp/QStringColor/classQStringColor.php">
+      <method />
+    </configuration>
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner />
       <method />
@@ -261,7 +307,14 @@
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
       <method />
     </configuration>
-    <list size="0" />
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="PHP Script.classQStringColor.php" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="PHP Script.classQStringColor.php" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false">
@@ -368,68 +421,24 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/authorizationUserPage.php">
+    <entry file="file://$PROJECT_DIR$/php/privateMailSend.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="54" selection-start="510" selection-end="510" vertical-scroll-proportion="0.37914693" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templet.php">
+    <entry file="file://$PROJECT_DIR$/php/Qp/includeQP.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="37" selection-start="122" selection-end="122" vertical-scroll-proportion="0.09287926" />
+        <state line="12" column="37" selection-start="617" selection-end="617" vertical-scroll-proportion="0.2843602" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/registration.php">
+    <entry file="file://$PROJECT_DIR$/js/functionJS.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="17" selection-start="473" selection-end="473" vertical-scroll-proportion="0.37151703" />
-      </provider>
-    </entry>
-    <entry file="uml://PHP/\Qp\QTestString">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>PHP</ID>
-          <OriginalElement>\Qp\QTestString</OriginalElement>
-          <nodes>
-            <node x="" y="">\Qp\QTestString</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="59.0" y="15.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/Qp/QCodeGen/classQCodeGen.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="87" selection-start="1352" selection-end="1352" vertical-scroll-proportion="-0.16113745" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/Qp/QCaptcha/classQCaptcha.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="0" selection-start="1816" selection-end="1816" vertical-scroll-proportion="-0.04265403" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/Qp/QBD/classQBD.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="198" column="76" selection-start="6022" selection-end="6022" vertical-scroll-proportion="0.6981424" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/Qp/QTestString/classQTestString.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="45" selection-start="1135" selection-end="1135" vertical-scroll-proportion="0.75980395" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/Qp/QMail/classQMail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="13" selection-start="20" selection-end="20" vertical-scroll-proportion="0.04643963">
-          <folding />
-        </state>
+        <state line="993" column="54" selection-start="33527" selection-end="33583" vertical-scroll-proportion="0.5707547" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php/functionPHP.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="282" column="1" selection-start="8687" selection-end="8687" vertical-scroll-proportion="0.17535545">
+        <state line="289" column="45" selection-start="8923" selection-end="8923" vertical-scroll-proportion="0.023696683">
           <folding>
             <marker date="1363850620452" expanded="false" signature="14263:14273" placeholder="..." />
             <marker date="1363850620452" expanded="false" signature="22244:22254" placeholder="..." />
@@ -437,45 +446,159 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/Qp/QPush/classQPush.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="21" selection-start="214" selection-end="214" vertical-scroll-proportion="0.09287926">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/Qp/includeQP.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="37" selection-start="617" selection-end="617" vertical-scroll-proportion="0.2843602">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/Qp/QDir/classQDir.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="139" column="39" selection-start="4576" selection-end="4576" vertical-scroll-proportion="0.23374613">
-          <folding />
+        <state line="139" column="39" selection-start="4576" selection-end="4576" vertical-scroll-proportion="3.227554" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/Qp/QCodeGen/classQCodeGen.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.5687204" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/Qp/QCaptcha/classQCaptcha.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.8530806" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/tableInfoUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="49" selection-start="311" selection-end="311" vertical-scroll-proportion="0.18575852" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/tableFriendsUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="53" selection-end="90" vertical-scroll-proportion="0.06965944" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/tableNewLetter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="22" selection-start="68" selection-end="75" vertical-scroll-proportion="0.07109005">
+          <folding>
+            <marker date="1363817144654" expanded="false" signature="1405:1417" placeholder="..." />
+            <marker date="1363817144654" expanded="true" signature="1418:2349" placeholder="..." />
+            <marker date="1363817144654" expanded="false" signature="1439:1452" placeholder="..." />
+            <marker date="1363817144654" expanded="false" signature="1484:1495" placeholder="..." />
+            <marker date="1363817144654" expanded="true" signature="1515:1720" placeholder="..." />
+            <marker date="1363817144654" expanded="false" signature="1536:1624" placeholder="..." />
+            <marker date="1363817144654" expanded="true" signature="1657:1710" placeholder="..." />
+            <marker date="1363817144654" expanded="false" signature="1741:1753" placeholder="..." />
+            <marker date="1363817144654" expanded="true" signature="1773:1778" placeholder="..." />
+            <marker date="1363817144654" expanded="true" signature="1782:2349" placeholder="..." />
+            <marker date="1363817144654" expanded="false" signature="1803:1814" placeholder="..." />
+            <marker date="1363817144654" expanded="true" signature="1815:2349" placeholder="..." />
+            <marker date="1363817144654" expanded="true" signature="1854:2349" placeholder="..." />
+            <marker date="1363817144654" expanded="false" signature="2563:2581" placeholder="..." />
+            <marker date="1363817144654" expanded="true" signature="2582:2918" placeholder="..." />
+            <marker date="1363817144654" expanded="false" signature="2628:2655" placeholder="..." />
+            <marker date="1363817144654" expanded="false" signature="2939:2950" placeholder="..." />
+            <marker date="1363817144654" expanded="true" signature="2951:3185" placeholder="..." />
+            <marker date="1363817144654" expanded="true" signature="3204:3902" placeholder="..." />
+            <marker date="1363817144654" expanded="true" signature="3217:3902" placeholder="..." />
+            <marker date="1363817144654" expanded="true" signature="3301:3902" placeholder="..." />
+            <marker date="1363817144654" expanded="true" signature="4229:4847" placeholder="..." />
+            <marker date="1363817144654" expanded="false" signature="5052:5071" placeholder="..." />
+            <marker date="1363817144654" expanded="true" signature="5072:5409" placeholder="..." />
+            <marker date="1363817144654" expanded="false" signature="5120:5147" placeholder="..." />
+            <marker date="1363817144654" expanded="true" signature="5446:5615" placeholder="..." />
+            <marker date="1363817144654" expanded="true" signature="5471:5605" placeholder="..." />
+            <marker date="1363817144654" expanded="false" signature="5533:5562" placeholder="..." />
+            <marker date="1363817144654" expanded="true" signature="5624:6287" placeholder="..." />
+            <marker date="1363817144654" expanded="false" signature="5645:5663" placeholder="..." />
+            <marker date="1363817144654" expanded="true" signature="5676:6277" placeholder="..." />
+            <marker date="1363817144654" expanded="false" signature="5734:5798" placeholder="..." />
+            <marker date="1363817144654" expanded="true" signature="5799:6263" placeholder="..." />
+            <marker date="1363817144654" expanded="false" signature="6308:6320" placeholder="..." />
+            <marker date="1363817144654" expanded="false" signature="6352:6386" placeholder="..." />
+            <marker date="1363817144654" expanded="false" signature="6450:6463" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php/Qp/QStringColor/styleQStringColor.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="20" selection-start="43" selection-end="43" vertical-scroll-proportion="0.0">
+        <state line="37" column="1" selection-start="435" selection-end="435" vertical-scroll-proportion="0.49253732">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/function.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="10" selection-start="1043" selection-end="1043" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/inquiryAjax.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="1" selection-start="225" selection-end="225" vertical-scroll-proportion="-5.625">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="52" selection-start="2846" selection-end="2846" vertical-scroll-proportion="-12.5">
+        <state line="80" column="12" selection-start="2865" selection-end="2865" vertical-scroll-proportion="-13.208333">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php/Qp/QStringColor/classQStringColor.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="93" selection-start="2415" selection-end="2415" vertical-scroll-proportion="0.58204335">
-          <folding />
+        <state line="82" column="44" selection-start="2864" selection-end="2864" vertical-scroll-proportion="-6.25">
+          <folding>
+            <marker date="1364253796345" expanded="true" signature="2852:2864" placeholder="..." />
+            <marker date="1364253796345" expanded="true" signature="3004:3016" placeholder="..." />
+            <marker date="1364253796345" expanded="true" signature="3282:3298" placeholder="..." />
+            <marker date="1364253796345" expanded="true" signature="3318:3399" placeholder="..." />
+            <marker date="1364253796345" expanded="true" signature="3510:3635" placeholder="..." />
+            <marker date="1364253796345" expanded="true" signature="3659:3695" placeholder="..." />
+            <marker date="1364253796345" expanded="true" signature="3953:3977" placeholder="..." />
+            <marker date="1364253796345" expanded="true" signature="6210:6246" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/tableSetCommit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="28" selection-start="1176" selection-end="1176" vertical-scroll-proportion="0.28751975">
+          <folding>
+            <marker date="1364254276799" expanded="false" signature="1162:1174" placeholder="..." />
+            <marker date="1364254276799" expanded="true" signature="1175:1727" placeholder="..." />
+            <marker date="1364254276799" expanded="true" signature="1175:2433" placeholder="..." />
+            <marker date="1364254276799" expanded="false" signature="1196:1209" placeholder="..." />
+            <marker date="1364254276799" expanded="false" signature="1196:1209" placeholder="..." />
+            <marker date="1364254276799" expanded="false" signature="1241:1252" placeholder="..." />
+            <marker date="1364254276799" expanded="true" signature="1272:1519" placeholder="..." />
+            <marker date="1364254276799" expanded="true" signature="1276:1514" placeholder="..." />
+            <marker date="1364254276799" expanded="true" signature="1289:1392" placeholder="..." />
+            <marker date="1364254276799" expanded="true" signature="1393:1501" placeholder="..." />
+            <marker date="1364254276799" expanded="true" signature="1425:1488" placeholder="..." />
+            <marker date="1364254276799" expanded="true" signature="1528:1726" placeholder="..." />
+            <marker date="1364254276799" expanded="true" signature="1528:1547" placeholder="..." />
+            <marker date="1364254276799" expanded="false" signature="1549:1637" placeholder="..." />
+            <marker date="1364254276799" expanded="true" signature="1670:1716" placeholder="..." />
+            <marker date="1364254276799" expanded="true" signature="1670:1716" placeholder="..." />
+            <marker date="1364254276799" expanded="true" signature="1735:2433" placeholder="..." />
+            <marker date="1364254276799" expanded="true" signature="1735:2433" placeholder="..." />
+            <marker date="1364254276799" expanded="true" signature="1748:2433" placeholder="..." />
+            <marker date="1364254276799" expanded="true" signature="1832:2433" placeholder="..." />
+            <marker date="1364254276799" expanded="true" signature="2760:3378" placeholder="..." />
+            <marker date="1364254276799" expanded="true" signature="3589:4190" placeholder="..." />
+            <marker date="1364254276799" expanded="true" signature="4391:4560" placeholder="..." />
+            <marker date="1364254276799" expanded="true" signature="4416:4550" placeholder="..." />
+            <marker date="1364254276799" expanded="false" signature="4478:4507" placeholder="..." />
+            <marker date="1364254276799" expanded="true" signature="4569:4792" placeholder="..." />
+            <marker date="1364254276799" expanded="true" signature="4569:4622" placeholder="..." />
+            <marker date="1364254276799" expanded="false" signature="4590:4608" placeholder="..." />
+            <marker date="1364254276799" expanded="true" signature="4621:4782" placeholder="..." />
+            <marker date="1364254276799" expanded="true" signature="4621:4782" placeholder="..." />
+            <marker date="1364254276799" expanded="false" signature="4813:4825" placeholder="..." />
+            <marker date="1364254276799" expanded="false" signature="4813:4825" placeholder="..." />
+            <marker date="1364254276799" expanded="false" signature="4857:4891" placeholder="..." />
+            <marker date="1364254276799" expanded="false" signature="4955:4968" placeholder="..." />
+            <marker date="1364254276799" expanded="true" signature="4981:4988" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
