@@ -1,39 +1,14 @@
 <?php
 
-$noData = "Нет данных";
+$realName = $dataUser[0]['realName'];
+$specialization = $dataUser[0]['specialization'];
+$computerConfiguration = $dataUser[0]['computerConfiguration'];
+$location = $dataUser[0]['location'];
+$interests = $dataUser[0]['interests'];
+$occupation = $dataUser[0]['occupation'];
+$recordOfService = $dataUser[0]['recordOfService'];
+$signature= $dataUser[0]['signature'];
 
-$realName = getUserUniversal($name,'realName');
-$specialization = getUserUniversal($name,'specialization');
-$computerConfiguration = getUserUniversal($name,'computerConfiguration');
-$location = getUserUniversal($name,'location');
-$interests = getUserUniversal($name,'interests');
-$occupation = getUserUniversal($name,'occupation');
-$recordOfService = getUserUniversal($name,'recordOfService');
-$signature = getUserUniversal($name,'signature');
-
-if(!strlen($realName))
-    $realName = $noData;
-
-if(!strlen($specialization))
-    $specialization = $noData;
-
-if(!strlen($computerConfiguration))
-    $computerConfiguration = $noData;
-
-if(!strlen($location))
-    $location = $noData;
-
-if(!strlen($interests))
-    $interests = $noData;
-
-if(!strlen($occupation))
-    $occupation = $noData;
-
-if(!strlen($recordOfService))
-    $recordOfService = $noData;
-
-if(!strlen($signature))
-    $signature = $noData;
 
 echo "
 <table style='width: 100%;'>

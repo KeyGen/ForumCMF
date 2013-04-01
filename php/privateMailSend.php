@@ -2,11 +2,29 @@
 
 include_once("functionPHP.php");
 
-$allAmountMail = getAmountPrivateAllMail($name,'sender');
+global $name;
+global $bdPrivateMail;
+$titleMail = array();
+
+$allAmountMail = $bdPrivateMail->getQuantityRepetition('sender', $name);
 
 if( $allAmountMail != 0){
-    $titleMail = getTitlePrivateMail($name, 'sender');
-    $countPageMail = 10;
+
+    $tempArrPrivateMail = $bdPrivateMail->getDataCell('sender', $name);
+
+    for($i = 0; $i<count($tempArrPrivateMail); $i++){
+        $tempArr = array();
+
+        $tempArr['id'] = $tempArrPrivateMail[$i]['id'];
+        $tempArr['status'] = $tempArrPrivateMail[$i]['status'];
+        $tempArr['date'] = $tempArrPrivateMail[$i]['date'];
+        $tempArr['theme'] = $tempArrPrivateMail[$i]['theme'];
+        $tempArr['addressee'] = $tempArrPrivateMail[$i]['addressee'];
+
+        $titleMail[] = $tempArr;
+    }
+
+    $countPageMail = 3;
 
     for($i = $allAmountMail-1; $i >= 0; $i--){
         $sender = $titleMail[$i]['sender'];
@@ -74,7 +92,7 @@ if( $allAmountMail != 0){
             $status = $titleMail[$i]['status'];
             $date = $titleMail[$i]['date'];
             $theme = $titleMail[$i]['theme'];
-            $sender = $titleMail[$i]['sender'];
+            $sender = $titleMail[$i]['addressee'];
 
             echo "
                 <div id='accordionMailSend$i'>
@@ -86,9 +104,9 @@ if( $allAmountMail != 0){
                                 ";
 
             if($status == 'notRead')
-                echo " <img id='imgIdPrivateMailSend$i' width='40px;' src='css/forumStyle/images/privateNewMail.png'> ";
+                echo " <img id='imgIdPrivateMailSend$i' width='40px;' src='css/images/privateNewMail.png'> ";
             else
-                echo "<img id='imgIdPrivateMailSend$i' width='40px;' src='css/forumStyle/images/privateMail.png'>";
+                echo "<img id='imgIdPrivateMailSend$i' width='40px;' src='css/images/privateMail.png'>";
 
             echo "
                                 </td>

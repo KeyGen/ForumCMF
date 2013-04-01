@@ -1,9 +1,27 @@
 <?php
 
-$allAmountMail = getAmountPrivateAllMail($name);
+global $name;
+global $bdPrivateMail;
+$titleMail = array();
+
+$allAmountMail = $bdPrivateMail->getQuantityRepetition('addressee', $name);
 
 if( $allAmountMail != 0){
-    $titleMail = getTitlePrivateMail($name);
+
+    $tempArrPrivateMail = $bdPrivateMail->getDataCell('addressee', $name);
+
+    for($i = 0; $i<count($tempArrPrivateMail); $i++){
+        $tempArr = array();
+
+        $tempArr['id'] = $tempArrPrivateMail[$i]['id'];
+        $tempArr['status'] = $tempArrPrivateMail[$i]['status'];
+        $tempArr['date'] = $tempArrPrivateMail[$i]['date'];
+        $tempArr['theme'] = $tempArrPrivateMail[$i]['theme'];
+        $tempArr['sender'] = $tempArrPrivateMail[$i]['sender'];
+
+        $titleMail[] = $tempArr;
+    }
+
     $countPageMail = 10;
 
     for($i = $allAmountMail-1; $i >= 0; $i--){
@@ -23,7 +41,7 @@ if( $allAmountMail != 0){
             </script>
         ";
 
-        if($name != $nameSession && getUserUniversal($nameSession,'title') == 'admin'){
+        if($name != $nameSession && $adminBL){
             echo "
             <script>
                 $(function(){
@@ -121,9 +139,9 @@ if( $allAmountMail != 0){
                                     ";
 
             if($status == 'notRead')
-                echo " <img id='imgIdPrivateMail$i' width='40px;' src='css/forumStyle/images/privateNewMail.png'> ";
+                echo " <img id='imgIdPrivateMail$i' width='40px;' src='css/images/privateNewMail.png'> ";
             else
-                echo "<img id='imgIdPrivateMail$i' width='40px;' src='css/forumStyle/images/privateMail.png'>";
+                echo "<img id='imgIdPrivateMail$i' width='40px;' src='css/images/privateMail.png'>";
 
             echo "
                                     </td>
@@ -149,7 +167,7 @@ if( $allAmountMail != 0){
                             </table>
                             <table style='width: 100%;' cellspacing='0' cellpadding='0'>
                                 <tr>
-                                    <td> <img src='css/forumStyle/images/point.png'></td>
+                                    <td> <img src='css/images/point.png'></td>
                                     <td style='width: 250px;'>
                                     <button id='buttonAnswerPrivateMail$i' style='width: 100%; height: 30px; font-size: 12px; text-align: center;'>Ответить $sender</button>
                                     </td>

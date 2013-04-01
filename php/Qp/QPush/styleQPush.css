@@ -1,6 +1,6 @@
-.QPushBlack {
+.QPushDefault {
     font-weight: bolder;
-    font-size: 14px;
+    font-size: 13px;
     color: white;
     background: url(pictures/QPushBlack1x400.png); /* Добавляем фон */
     background-size: contain; /* Масштабируем фон */
@@ -10,17 +10,17 @@
     height: 30px;
 }
 
-.QPushBlack:hover {
+.QPushDefault:hover {
     background: url(pictures/QPushBlue1x400.png); /* Добавляем фон */
     background-size: contain; /* Масштабируем фон */
     border: 1px solid #0078a3;
 }
 
-.QPushBlack:active {
-    background: url(pictures/QPushOrange1x400.png); /* Добавляем фон */
+.QPushDefault:active {
+    background: url(pictures/QPushBlack1x400.png); /* Добавляем фон */
     background-size: contain; /* Масштабируем фон */
     color: #000000;
-    border: 1px solid #ff8406;
+    border: 0em solid #d3d3d3;
 }
 
 /*

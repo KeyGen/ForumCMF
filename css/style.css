@@ -1,0 +1,74 @@
+body { font-family: Arial, Tahoma; color:#000; font-size:14px;}
+
+.radiusTopLeft10 { border-radius: 10px 0px 0px 0px }
+.radius10TopRight { -moz-border-radius-topright: 10px; -webkit-border-top-right-radius: 10px; -khtml-border-top-right-radius: 10px; border-top-right-radius: 10px; }
+.radius10Left { -moz-border-radius-bottomleft: 10px; -webkit-border-bottom-left-radius: 10px; -khtml-border-bottom-left-radius: 10px; border-bottom-left-radius: 10px; }
+.radius10Right { -moz-border-radius-bottomright: 10px; -webkit-border-bottom-right-radius: 10px; -khtml-border-bottom-right-radius: 10px; border-bottom-right-radius: 10px; }
+
+.background {background-image: url('images/titleBackground.png')}
+
+.borderColor{background-color: #4a434b;}
+
+.tableReg {
+    width: 100%;
+    border: 2px;
+}
+
+.block {
+    display: inline;
+}
+
+.none {
+    display: none;
+}
+
+.box {
+    display: none; /* по умолчанию прячем все блоки */
+}
+.box.visible {
+    display: block; /* по умолчанию показываем нужный блок */
+}
+
+.itemJS {
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+.divPrivateOffice {
+    display: block;
+    color: #000000;
+}
+
+/* ссылки */
+A {
+    text-decoration: none; /* Убирает подчеркивание для ссылок */
+}
+A:hover {
+    text-decoration: underline; /* Добавляем подчеркивание при наведении курсора на ссылку */
+    color: red; /* Ссылка красного цвета */
+}
+
+.admin {font-size: 12px;}
+.admin:hover { color: red; }
+.admin:visited { color: red; }
+.admin:active { color: red; }
+.admin:link { color: red; }
+
+.moder {font-size: 12px;}
+.moder:hover { color: green; }
+.moder:visited { color: green; }
+.moder:active { color: green; }
+.moder:link { color: green; }
+
+.user {font-size: 12px;}
+.user:hover { color: #000000; }
+.user:visited { color: #000000; }
+.user:active { color: #000000; }
+.user:link { color: #000000; }
+
+.afterAuthorizationUser {font-size: 16px; font-weight: bolder;}
+.afterAuthorizationUser:hover { color: #000000; }
+.afterAuthorizationUser:visited { color: #000000; }
+.afterAuthorizationUser:active { color: #000000; }
+.afterAuthorizationUser:link { color: #000000; }

@@ -1,8 +1,12 @@
 <!-- Подключение php -->
 <?php
 session_start();
-include_once("php/functionPHP.php");
 include_once('php/Qp/includeQP.php');
+// Подключаем класс QBD
+$bdUsers = new \Qp\QBD('keygen','12345','bdForum','users');
+$bdPrivateMail = new \Qp\QBD('keygen','12345','bdForum','mail');
+
+//unset($_SESSION['userName']);
 ?>
 <!-- ############################################### -->
 <!-- Форум тестовый сайт на html php css javascript  -->
@@ -13,27 +17,31 @@ include_once('php/Qp/includeQP.php');
 
     <!-- Подключение стилей -->
     <style type="text/css">
-        @import "css/forumStyle/index.css";
+        @import "css/style.css";
         <?php Qp\QPush::getStyle(__DIR__,'import'); ?>
         <?php Qp\QStringColor::getStyle(__DIR__,'import'); ?>
         @import "jQuery/css/ui-darkness/jquery-ui-1.9.2.custom.css";
     </style>
 
     <!-- Подключение javaScript -->
-    <script src="js/functionJS.js"></script>
     <script src="js/function.js"></script>
     <script type='text/javascript' src='jQuery/js/jquery-1.8.3.js'></script>
     <script type='text/javascript' src='jQuery/js/jquery-ui-1.9.2.custom.js'></script>
     <script type='text/javascript' src='jQuery/js/jquery-ui-1.9.2.custom.min.js'></script>
 
     <!-- Icon title -->
-    <link rel="icon" type="files_ru/image/png" href="css/forumStyle/images/logo.png" />
-    <link rel="shortcut icon" type="image/png" href="css/forumStyle/images/logo.png" />
+    <link rel="icon" type="files_ru/image/png" href="css/images/logo.png" />
+    <link rel="shortcut icon" type="image/png" href="css/images/logo.png" />
 </head>
 
 <!-- ############################################### -->
 
 <body>
+
+<!-- ############## Модальны диалог ################# -->
+<div style="display: none;" id="dialog-message"><p id='dialog-body'></p></div>
+<!-- ############################################### -->
+
 <table width="98%" height="100%" cellpadding='0' cellspacing='0' style="margin-left: 1%;">
 <tr>
     <td style="height: 20px;" class="radiusTopLeft10 radius10TopRight borderColor"></td>
@@ -45,7 +53,7 @@ include_once('php/Qp/includeQP.php');
         <table cellpadding='15px' cellpadding='0' cellspacing='0'>
             <tr>
                 <td>
-                    <a href="/"> <img src="css/forumStyle/images/logo.png" width="85px" align="middle"></a>
+                    <a href="/"> <img src="css/images/logo.png" width='85px' align='middle'></a>
                 </td>
                 <td style="text-align: center;">
                     <b>Форум программистов</b><br>
@@ -58,11 +66,10 @@ include_once('php/Qp/includeQP.php');
 
     <td style="width: 250px; height: 100px;" class="background">
         <?php
-        if($_SESSION['userName'] == "")
-            include("php/formAuthorization.php");
-        else{
-            include("php/formUserAfterAuthorization.php");
-        }
+        if (!isset($_SESSION['userName']))
+            include("php/tableAuthorization.php");
+        else
+            include("php/tableAfterAuthorization.php");
         ?>
     </td>
 </tr>
@@ -75,9 +82,7 @@ include_once('php/Qp/includeQP.php');
     <td colspan="3">
         <!-- =========================================================================== -->
         <br>
-        <?php
-        include_once('php/tableSetCommit.php');
-        ?>
+        <?php include_once("php/tableSetCommit.php") ?>
         <br>
         <!-- =========================================================================== -->
     </td>
@@ -87,21 +92,23 @@ include_once('php/Qp/includeQP.php');
     <td colspan="3" class="background" style="text-align: center; height: 1px;">
         <b style="font-size: 7px;"><br></b>
         <b>Кто на форуме</b><br>
-        <b style="font-size: 9px;">( онлайн: <?php echo allUserOnline(); ?> )</b>
+        <b style="font-size: 9px;">( онлайн: <?php echo $bdUsers->getQuantityRepetition('status','on-line'); ?> )</b>
         <hr>
         <?php
-        $userOnline = getUserOnline();
-        foreach($userOnline as $key=>$value){
-            if($value == 'moder'){
-                echo "<a class='moder' href='privateOffice.php?userName=$key'> ".$key." </a>";
-            }
-            elseif($value == 'admin'){
-                echo "<a class='admin' href='privateOffice.php?userName=$key'> ".$key." </a>";
-            }
-            elseif($value == 'user'){
-                echo "<a class='user' href='privateOffice.php?userName=$key'> ".$key." </a>";
-            }
+
+        foreach($bdUsers->getDataCell('title', 'admin') as $arr){
+            if($arr['status'] == 'on-line')
+                echo "<a class='admin' href='privateoffice.php?user=".$arr['name']."'> ".$arr['name']." </a>";
         }
+        foreach($bdUsers->getDataCell('title', 'moder') as $arr){
+            if($arr['status'] == 'on-line')
+                echo "<a class='moder' href='privateoffice.php?user=".$arr['name']."'> ".$arr['name']." </a>";
+        }
+        foreach($bdUsers->getDataCell('title', 'user') as $arr){
+            if($arr['status'] == 'on-line')
+                echo "<a class='user' href='privateoffice.php?user=".$arr['name']."'> ".$arr['name']." </a>";
+        }
+
         ?>
         <hr>
     </td>
@@ -117,7 +124,7 @@ include_once('php/Qp/includeQP.php');
         <table cellpadding='15px' cellpadding='0' cellspacing='0' width=100%>
             <tr>
                 <td style="text-align: center; width: 90px;">
-                    <img src="css/forumStyle/images/logo.png" width="85px" align="middle">
+                    <img src="css/images/logo.png" width="85px" align="middle">
                 </td>
                 <td style="text-align: center; width: 200px;">
                     <b>Форум программистов</b><br>

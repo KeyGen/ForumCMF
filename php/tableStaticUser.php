@@ -1,12 +1,20 @@
 <?php
 
-$allPress = getUserUniversal($name,'allPress');
-$thanks = getUserUniversal($name, 'thanks');
-$thanksAnother = getUserUniversal($name, 'thanksAnother');
-$registration = getUserUniversal($name, 'registration');
-$lastActivity = getUserUniversal($name, 'lastActivity');
+$allPress= $dataUser[0]['allPress'];
+$thanks= $dataUser[0]['thanks'];
+$thanksAnother= $dataUser[0]['thanksAnother'];
+$registration= $dataUser[0]['registration'];
+$lastActivity= $dataUser[0]['lastActivity'];
 
 echo "
+<script>
+    $(function(){
+        $( '#buttonStaticUser1' ).button();
+        $( '#buttonStaticUser2' ).button();
+        $( '#buttonStaticUser3' ).button();
+        $( '#buttonStaticUser4' ).button();
+    });
+</script>
 <table style='width: 100%;'>
     <tr>
         <td>

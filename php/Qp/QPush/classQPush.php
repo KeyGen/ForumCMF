@@ -8,24 +8,38 @@ class QPush {
     private $value;
     private $width;
     private $height;
+    private $fontSize;
     private $styleId;
+    private $style;
+    private $class;
     private $id;
     private $body;
     private $onClick;
 
-    private $styleClass = array('black'=>'QPushBlack', 'red'=>'QPushRed', 'green'=>'QPushGreen');
+    private $styleClass = array('default'=>'QPushDefault');
 
-    function __construct($width = '150', $height = '30', $styleId = 'black', $value = 'QPush'){
+    function __construct($value = 'QPush', $width = '150px', $height = '30px', $fontSize = '14px', $class = '', $style = '', $styleId = 'default'){
 
         $this->id = self::$instance++;
 
         $onClick = "alert('This QPush_$this->id');";
 
+        $this->fontSize = $fontSize;
         $this->value = $value;
         $this->width = $width;
         $this->height= $height;
         $this->onClick = $onClick;
         $this->styleId = $styleId;
+        $this->style = $style;
+        $this->class = $class;
+    }
+
+    function setClass($class){
+        $this->class = $class;
+    }
+
+    function setStyle($style){
+        $this->style = $style;
     }
 
     function setSize($width, $height){
@@ -53,6 +67,10 @@ class QPush {
         return "document.getElementById('$this->id')";
     }
 
+    function setId($id){
+        $this->id = $id;
+    }
+
     function getStyle($dir, $case){
         $dirClass = __DIR__;
         $dirFile = $dir;
@@ -69,17 +87,9 @@ class QPush {
     function show(){
         $nameStyle = $this->styleClass[$this->styleId];
 
-        $style = "";
-        if($this->width != '150' && $this->height != '30')
-            $style = "style='width: {$this->width}px; height: {$this->height}px;'";
-        elseif($this->width != '150')
-            $style = "style='width: {$this->width}px;'";
-        elseif($this->height != '30')
-            $style = "style='height: {$this->height}px;'";
+        $style = "style='width: {$this->width}; height: {$this->height}; font-size: {$this->fontSize}; {$this->style};'";
+        $this->body = "<input id='QPush_$this->id' type='button' class='$nameStyle $this->class' $style value='$this->value' onclick=\"$this->onClick\">\n";
 
-        $this->body = "<input id='QPush_$this->id' type='button' class='$nameStyle' $style value='$this->value' onclick=\"$this->onClick\">\n";
-
-        echo "$this->body";
         return $this->body;
     }
 }

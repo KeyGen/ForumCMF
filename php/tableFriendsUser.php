@@ -1,11 +1,9 @@
 <?php
 
-$friends = getUserUniversal($name,'friends');
-$friendsMass = explode('/',$friends);
+preg_match_all("/(\[)(.*)(\])/U", $dataUser[0]['friends'], $arrFriends);
+$BLDel = $adminBL || $userBL;
 
-$BLDel = $title == "admin" || $name == $nameSession;
-
-if(!(count($friendsMass)>1)){
+if(!isset($arrFriends[0][0])){
     echo "
     <table style='width: 100%; height: 10px;'><tr><td></td></tr></table>
     <table style='width: 100%;'>
@@ -67,13 +65,14 @@ else{
             ";
 
 
-    for($i = 0; $i<count($friendsMass); $i++){
-        $friend = $friendsMass[$i];
+    for($i = 0; $i<count($arrFriends[0]); $i++){
+        $friend = $arrFriends[2][$i];
+        $dataFriend = $bdUsers->getDataName($friend);
 
-        $avatarFriend   = getUserUniversal($friend,'avatar');
-        $titleFriend    = getUserUniversal($friend,'title');
-        $statusFriend   = getUserUniversal($friend,'status');
-        $lastActivityFriend = getUserUniversal($friend,'lastActivity');
+        $avatarFriend = $dataFriend[0]['avatar'];
+        $titleFriend = $dataFriend[0]['title'];
+        $statusFriend = $dataFriend[0]['status'];
+        $lastActivityFriend = $dataFriend[0]['lastActivity'];
 
         if($friend){
 
@@ -93,7 +92,7 @@ else{
                     <table style='width: 50px; height: 50px; text-align: center; border-radius: 6px; border: 1px solid;' cellpadding='0' cellspacing='0'>
                         <tr>
                             <td>
-                                <a href='privateOffice.php?userName=$friend'><img style='border-radius: 6px; width: 50px;' src='$avatarFriend'></a>
+                                <a href='privateoffice.php?user=$friend'><img style='border-radius: 6px; width: 50px;' src='$avatarFriend'></a>
                             </td>
                         </tr>
                     </table>
@@ -115,9 +114,9 @@ else{
                     <table style='width: 75px; font-weight: bolder; text-align: center; font-size: 12px;'><tr><td>";
 
                 if($statusFriend == 'on-line')
-                    echo "<img width='35px' src='css/forumStyle/images/yes.png'/>";
+                    echo "<img width='35px' src='css/images/yes.png'/>";
                 else
-                    echo "<img width='35px' src='css/forumStyle/images/no.png'/>";
+                    echo "<img width='35px' src='css/images/no.png'/>";
 
                 echo "</td></tr></table>
                 </td>

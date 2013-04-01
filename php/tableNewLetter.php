@@ -1,7 +1,6 @@
 <?php
 
-$friends = getUserUniversal($name,'friends');
-$friendsMass = explode('/',$friends);
+preg_match_all("/(\[)(.*)(\])/U", $dataUser[0]['friends'], $arrFriends);
 $themeMail = 'Тема сообщения';
 
 $specialSymbol = array( '&bull;', '&hellip;', '&prime;', '&Prime;', '&oline;', '&larr;',
@@ -47,8 +46,8 @@ echo"
             \">
               <option value='selectFriend'>Выбрать друга</option>";
 
-for($i = 0; $i<count($friendsMass); $i++){
-    $friend = $friendsMass[$i];
+for($i = 0; $i<count($arrFriends[0]); $i++){
+    $friend = $arrFriends[2][$i];
     if($friend)
     echo "<option value='$friend'>$friend</option>";
 }

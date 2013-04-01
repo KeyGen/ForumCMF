@@ -10,6 +10,9 @@ class QBD {
     private $db;        // Название BD
     private $table;     // Таблица в которой будем работать
 
+    private $tablesBD = array();
+    private $fieldsBD = array();
+
     // Конструктор
     function __construct($name, $password, $db, $table, $host = 'localhost'){
 
@@ -20,12 +23,34 @@ class QBD {
         $this->table = $table;
 
         $connection = mysql_connect("$this->host", "$this->name", "$this->password") or die("Error connect");
-        mysql_select_db("$this->db", $connection) or die("Error connect db");
+        mysql_select_db($this->db, $connection) or die("Error connect db");
+
+        // Получаем список таблиц в базе данных для зациты от ошибок запросов (sql иньекции курят)
+        $tables = mysql_list_tables($this->db, $connection);
+        while($arr = mysql_fetch_array($tables))
+            $this->tablesBD[] = $arr[0];
+
+        // Получаем список ячеек в таблице для зациты
+        $fields = mysql_list_fields($this->db, $this->table, $connection);
+        for($i = 0; $i< $fields; $i++)
+            $this->fieldsBD[] = mysql_field_name($fields, $i);
     }
 
     // Деструктор
     function __destruct() {
         mysql_close();
+    }
+
+    // Обезопасим класс
+    private function protectorFieldsBD($fields){
+        $bl = false;
+        foreach($this->fieldsBD as $value){
+            if($fields == $value){
+                $bl = true; break;
+            }
+        }
+
+        return $bl;
     }
 
     // Подключение к BD
@@ -59,11 +84,19 @@ class QBD {
 
             switch($case){
                 case 'associative':
-                    return mysql_fetch_assoc($result);
-                break;
+                    $arrReturn = array();
+                    while($arr = mysql_fetch_assoc($result)){
+                        $arrReturn[] = $arr;
+                    }
+                    return $arrReturn;
+                    break;
                 case 'indicial':
-                    return mysql_fetch_row($result);
-                break;
+                    $arrReturn = array();
+                    while($arr = mysql_fetch_row($result)){
+                        $arrReturn[] = $arr;
+                    }
+                    return $arrReturn;
+                    break;
             }
         }
         else{
@@ -84,10 +117,18 @@ class QBD {
 
             switch($case){
                 case 'associative':
-                    return mysql_fetch_assoc($result);
+                    $arrReturn = array();
+                    while($arr = mysql_fetch_assoc($result)){
+                        $arrReturn[] = $arr;
+                    }
+                    return $arrReturn;
                     break;
                 case 'indicial':
-                    return mysql_fetch_row($result);
+                    $arrReturn = array();
+                    while($arr = mysql_fetch_row($result)){
+                        $arrReturn[] = $arr;
+                    }
+                    return $arrReturn;
                     break;
             }
         }
@@ -109,10 +150,18 @@ class QBD {
 
             switch($case){
                 case 'associative':
-                    return mysql_fetch_assoc($result);
+                    $arrReturn = array();
+                    while($arr = mysql_fetch_assoc($result)){
+                        $arrReturn[] = $arr;
+                    }
+                    return $arrReturn;
                     break;
                 case 'indicial':
-                    return mysql_fetch_row($result);
+                    $arrReturn = array();
+                    while($arr = mysql_fetch_row($result)){
+                        $arrReturn[] = $arr;
+                    }
+                    return $arrReturn;
                     break;
             }
         }
@@ -161,11 +210,34 @@ class QBD {
         return true;
     }
 
+
     // Получение количества повторов
     // $cellFind - ячейка
     // $dataFind - ищем данные
     function getQuantityRepetition($cellFind, $dataFind){
         $query = "SELECT * FROM $this->table WHERE $cellFind='$dataFind'";
+        $result = mysql_query($query) or die ("Error: ".mysql_error());
+
+        $quantity = 0;
+        while(mysql_fetch_array($result))  $quantity++;
+
+        return $quantity;
+    }
+
+    // Получение количества повторов с указанием нескольких аргументов
+    // $caseArr - массив значений фильтра
+    function getQuantityArr($caseArr){
+        $query = "SELECT * FROM $this->table WHERE ";
+
+        $i = 0;
+        foreach($caseArr as $key=>$value){
+            if(!$i)
+                $query = $query."$key='$value'";
+            else
+                $query = $query." AND $key='$value'";
+            $i++;
+        }
+
         $result = mysql_query($query) or die ("Error: ".mysql_error());
 
         $quantity = 0;

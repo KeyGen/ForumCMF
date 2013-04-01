@@ -257,6 +257,7 @@ function getRandAvatarDefault(){
 // Выбор случайной аватарки ----------------- end -----------------
 
 // Регистрация пользователя ----------------- begin -----------------
+// echo setUser($_SERVER['REMOTE_ADDR'], $_POST['username'], $_POST['password'], $_POST['email'], getRandAvatarDefault());
 function setUser($ip, $name, $password, $email, $avatar){
 
     $date = date("H:i:s d.m.Y");

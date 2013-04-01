@@ -1,10 +1,15 @@
 <?php
 
-$emailUser = getUserUniversal($name,'email');
+$emailUser = $dataUser[0]['email'];
 
 echo "
-
-<center>
+<script>
+    $(function(){
+        $('#buttonEditorPassword').button();
+        $('#buttonPasswordToEmail').button();
+        $('#buttonEditorEmail').button();
+    });
+</script>
 <table style='width: 100%;'>
     <tr><td style='height: 14px;'></td></tr>
     <tr>
@@ -25,11 +30,25 @@ echo "
                         </td>
                         <td>
                             <input id='inputEditorPassword1' style='height: 30px; width: 100%;' maxlength='20' type='password' value=''
-                            onchange=\"testPasswordUser('$name', this.value);\" />
+                            onchange=\"
+                                if(this.value){
+                                    if(!testData('password', this.value)){
+                                        document.getElementById('iconPasswordEditYes1').className = 'block';
+                                        document.getElementById('iconPasswordEditNo1').className = 'none';
+                                    }
+                                    else{
+                                        document.getElementById('iconPasswordEditYes1').className = 'none';
+                                        document.getElementById('iconPasswordEditNo1').className = 'block';
+                                    }
+                                } else {
+                                    document.getElementById('iconPasswordEditYes1').className = 'none';
+                                    document.getElementById('iconPasswordEditNo1').className = 'none';
+                                }
+                            \" />
                         </td>
                         <td style='width: 350px;'>
-                            <img id='iconPasswordEditYes1' class='none' width='20px' src='css/forumStyle/images/yes.png'>
-                            <img id='iconPasswordEditNo1' class='none' width='20px' src='css/forumStyle/images/no.png'>
+                            <img id='iconPasswordEditYes1' class='none' width='20px' src='css/images/yes.png'>
+                            <img id='iconPasswordEditNo1' class='none' width='20px' src='css/images/no.png'>
                         </td>
                     </tr>
                     <tr>
@@ -38,14 +57,13 @@ echo "
                         </td>
                         <td>
                             <input id='inputEditorPassword2' style='height: 30px; width: 100%;' maxlength='20' type='text' value=''
-                            onchange=\"testPasswordUpdate(this.value,
-                                                          document.getElementById('iconPasswordEditYes2'),
-                                                          document.getElementById('iconPasswordEditNo2'));
-                                       testControlPasswordUpdate(this.value, document.getElementById('inputEditorPassword3').value);\" />
+                            onchange=\"
+
+                            \" />
                         </td>
                         <td>
-                            <img id='iconPasswordEditYes2' class='none' width='20px' src='css/forumStyle/images/yes.png'>
-                            <img id='iconPasswordEditNo2' class='none' width='20px' src='css/forumStyle/images/no.png'>
+                            <img id='iconPasswordEditYes2' class='none' width='20px' src='css/images/yes.png'>
+                            <img id='iconPasswordEditNo2' class='none' width='20px' src='css/images/no.png'>
                         </td>
                     </tr>
                     <tr>
@@ -57,8 +75,8 @@ echo "
                             onchange=\"testControlPasswordUpdate(document.getElementById('inputEditorPassword2').value, this.value);\" />
                         </td>
                         <td>
-                            <img id='iconPasswordEditYes3' class='none' width='20px' src='css/forumStyle/images/yes.png'>
-                            <img id='iconPasswordEditNo3' class='none' width='20px' src='css/forumStyle/images/no.png'>
+                            <img id='iconPasswordEditYes3' class='none' width='20px' src='css/images/yes.png'>
+                            <img id='iconPasswordEditNo3' class='none' width='20px' src='css/images/no.png'>
                         </td>
                     </tr>
                     <tr><td style='height: 5px;'></td></tr>
@@ -114,8 +132,8 @@ echo "
                             onchange=\"testEmailEdit(this.value);\"/>
                         </td>
                         <td style='width: 350px;'>
-                            <img id='iconEmailEditYes1' class='none' width='20px' src='css/forumStyle/images/yes.png'>
-                            <img id='iconEmailEditNo1' class='none' width='20px' src='css/forumStyle/images/no.png'>
+                            <img id='iconEmailEditYes1' class='none' width='20px' src='css/images/yes.png'>
+                            <img id='iconEmailEditNo1' class='none' width='20px' src='css/images/no.png'>
                         </td>
                     </tr>
                     <tr>
@@ -127,8 +145,8 @@ echo "
                             onchange=\"testControlEmailUpdate(document.getElementById('inputEditorEmail1').value, this.value);\" />
                         </td>
                         <td>
-                            <img id='iconEmailEditYes2' class='none' width='20px' src='css/forumStyle/images/yes.png'>
-                            <img id='iconEmailEditNo2' class='none' width='20px' src='css/forumStyle/images/no.png'>
+                            <img id='iconEmailEditYes2' class='none' width='20px' src='css/images/yes.png'>
+                            <img id='iconEmailEditNo2' class='none' width='20px' src='css/images/no.png'>
                         </td>
                     </tr>
                     <tr><td style='height: 5px;'></td></tr>
@@ -147,5 +165,4 @@ echo "
     <tr><td style='height: 10px;  border-radius: 6px;' class='borderColor' colspan='3'></td></tr>
     <tr><td style='height: 14px;'></td></tr>
 </table>
-</center>
 ";
